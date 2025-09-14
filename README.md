@@ -15,8 +15,7 @@ The initial task was to:
 ---
 
 ## Contents
-- `notebook.ipynb` – main notebook with data exploration, preprocessing, model training, and evaluation
-- `mldata_0003260547.description.txt` – description of the dataset and initial task instructions
+- `notebook.ipynb` – main notebook with data exploration, preprocessing, model training, and evaluation.
 
 ---
 
@@ -29,12 +28,28 @@ The initial task was to:
 
 ---
 
+## Conclusions
+- Both algorithms (KNN and Random Forest) were tuned for their key hyperparameters:
+  - KNN: number of neighbors (k), distance metric, weighting strategy.
+  - Random Forest: number of trees, maximum depth, and split criteria.
+
+- The results showed that:
+  - Random Forest consistently outperformed KNN in accuracy and stability across cross-validation folds.
+  - KNN performed reasonably well for small k values, but was sensitive to parameter changes and less robust.
+
+- Final Choice:
+  - The Random Forest model with optimized hyperparameters (e.g., ~100 trees, balanced depth) was chosen as the best model.
+  - It achieved the highest accuracy and offered better generalization for this dataset.
+
+---
+
 ## Requirements
 - Python 3.9+
 - Libraries:
   - numpy
   - pandas
   - matplotlib
+  - seaborn
   - scikit-learn
   - jupyter
 
